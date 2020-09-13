@@ -2,6 +2,9 @@
 .idea/workspace.xml
 workspace.xml
 *.db
+
+*.csv
+
 �һ����_201906/
 01_GoogleNews-vectors-negative300.bin
 01_ko.bin
