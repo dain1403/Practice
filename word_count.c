@@ -13,7 +13,7 @@ int main(){
 
     gets(input);
 
-    printf("%d\n", strlen(input));
+    //printf("%d\n", strlen(input));
 
     for(int i = 0; i < strlen(input); i++){
 
