@@ -6,31 +6,31 @@
 
 int main(){
     char input[1000000];
-    //char *ptr;
     int word_count = 0;
-    int i, j = 0;
     char word;
 
     printf("입력 : ");
-    //scanf("%s",&input);
 
-    while(1){
-        word = getchar();
-        //if(word == '\n') break;
-        input[i++] = word;
-        if(word == '\n') break;
+    gets(input);
+
+    printf("%d\n", strlen(input));
+
+    for(int i = 0; i < strlen(input); i++){
+
+        if(input[strlen(input)-1] == ' ') { // 문장뒤 공백 있을 경우
+            word_count++;
+            break;
+        }
+        else if(input[i] == ' ') { // 띄어쓰기 있을때 
+            if(i == 0){ // 첫글자가 띄어쓰기일때는 넘어가도록
+                continue;
+            }
+            word_count++;
+        }
+ 
     }
 
-    printf("%s", input[i-1]);
-    //printf("i : %d\n",i);
-
-    // while(1){
-    //     if(input[j] == ' ' && input[j+1] != '\n') word_count++;
-    //     j++;
-    //     if(i == j) break;
-    // }
-
-    // printf("%d",word_count);
+    printf("%d",word_count+1);
 
     return 0;
 }
