@@ -4,6 +4,8 @@ workspace.xml
 *.db
 
 *.csv
+./*.csv
+
 
 �һ����_201906/
 01_GoogleNews-vectors-negative300.bin
